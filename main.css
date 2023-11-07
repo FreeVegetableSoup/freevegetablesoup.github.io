@@ -1,6 +1,6 @@
 body{
-    background: #a5928c;
-    color: rgb(64, 20, 7);
+    background: black;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,7 +12,8 @@ button{
     opacity: 50%;
 }
 h1{
-    color: #a5928c;
+    color: white;
+    font-weight: 900;
 }
 header{
     background: black;
@@ -21,12 +22,24 @@ header{
     position: fixed;
     width: 100%;
     justify-content: space-between;
+    z-index: 5;
 }
-section{
-
+section.about{
+    background-color: white;
+    color: black;
+    z-index: 1;
+    position: absolute;
 }
-section.start video{
+section.home-logo{
+    height: 1000px;
+}
+section.home video{
     width: 100%;
+    z-index: 0;
+    position: absolute;
+    position: fixed;
+    opacity: 30%;
+    top: -150px;
 }
 footer{
     background: rgb(64, 20, 7);
@@ -43,6 +56,10 @@ nav ul li{
     margin-top: 15px;
 }
 h1.title{
+    margin: 0;
+    text-align: center; 
+}
+h1.logo{
     background-image: url("images/logo.png");
     background-size: 90px;
     background-repeat: no-repeat;
